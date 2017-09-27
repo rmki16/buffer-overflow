@@ -1,0 +1,10 @@
+break 16
+break 30
+run pass_alt_3
+x/s pass_buff
+x/x &auth_flag
+x/dw &auth_flag
+continue
+x/s pass_buff
+x/x &auth_flag
+x/dw &auth_flag

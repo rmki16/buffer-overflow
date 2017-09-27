@@ -1,0 +1,23 @@
+Reading symbols from login...done.
+(gdb) Breakpoint 1 at 0x400659: file login.c, line 16.
+(gdb) Breakpoint 2 at 0x40071f: file login.c, line 30.
+(gdb) Starting program: /home/baharuddinaziz/23216001/login pass_alt_3
+
+Breakpoint 1, auth_check (pass=0x7fffffffe1da "pass_alt_3") at login.c:16
+16	  strcpy(pass_buff, pass); // copy the value of pass to pass_buff
+(gdb) 0x7fffffffdce0:	"\001"
+(gdb) 0x7fffffffdcfc:	0x00
+(gdb) 0x7fffffffdcfc:	0
+(gdb) Continuing.
+
+Breakpoint 2, auth_check (pass=0x7fffffffe1da "pass_alt_3") at login.c:31
+31	  return(auth_flag);
+(gdb) 0x7fffffffdce0:	"pass_alt_3"
+(gdb) 0x7fffffffdcfc:	0x01
+(gdb) 0x7fffffffdcfc:	1
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 5618] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
